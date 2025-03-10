@@ -6,7 +6,11 @@ This tweak makes Spotify think you have a Premium subscription, granting free li
 
 ## The History
 
-Several months ago, Spotilife, the only tweak to get Spotify Premium, stopped working on new Spotify versions. I decompiled Spotilife, reverse-engineered Spotify, intercepted requests, etc., and created this tweak.
+In January 2024, Spotilife, the only tweak to get Spotify Premium, stopped working on new Spotify versions. I decompiled Spotilife, reverse-engineered Spotify, intercepted requests, etc., and created this tweak.
+
+## Repositories
+
+You can add an official EeveeSpotify repository to your signing app to always stay up to date. See [Repositories](/Repositories).
 
 ## Restrictions
 
@@ -21,7 +25,7 @@ It's possible to implement downloading locally, but it will never be included in
 
 ## Lyrics Support
 
-EeveeSpotify replaces Spotify monthly limited lyrics with one of the following three lyrics providers:
+EeveeSpotify replaces Spotify monthly limited lyrics with one of the following four lyrics providers:
 
 - Genius: Offers the best quality lyrics, provides the most songs, and updates lyrics the fastest. Does not and will never be time-synced.
 
@@ -43,22 +47,21 @@ The tweak patches this file while initializing; Spotify loads it and assumes you
 
 ![Hex](Images/hex.png)
 
-Tweak also sets `trackRowsEnabled` in `SPTFreeTierArtistHubRemoteURLResolver` to `true`, so Spotify loads not just track names on the artist page. It can stop working just like Spotilife, but so far, it works on the latest Spotify 8.9.## (Spotilife also patches `offline.bnk`, however, it changes obscure bytes that do nothing on new versions). 
+Tweak also sets `trackRowsEnabled` in `SPTFreeTierArtistHubRemoteURLResolver` to `true`, so Spotify loads not just track names on the artist page, and adds a liked tracks row to the artist view models, allowing you to see the liked tracks row just like with Premium.
+
+To open Spotify links in sideloaded app, use [OpenSpotifySafariExtension](https://github.com/BillyCurtis/OpenSpotifySafariExtension). Remember to activate it and allow access in Settings > Safari > Extensions.
 
 ## Support
 
-EeveeSpotify has always been free and open-source project. However, I started accepting crypto donations if you'd like to support me. This will help me pay for a good monthly VPS and continue creating cool things. I really appreciate it:
+EeveeSpotify has always been free and open-source project. However, I started accepting crypto donations if you'd like to support me. I really appreciate it:
 
-USDT (TRC-20): `TJppx7dvTa2ndoVcQ1jxWkvGN1vEuFHssJ`
+USDT (TRC-20): `TK4AZZLEWrahYUkKDG8r8Pr5BmkoFjs5zU`
 
-USDC/ETH/USDT: `0x98bbd1541cb9a8ebb1229741218886efba963677`
+ETH/USDC/USDT: `0x4eFf79BdfCa9d3BC01a1d145eF343871bb0a3CdF`
 
-BTC: `bc1q230f0jaryxhrr03v8knxew30p7l4kwefd6d4nl`
+BTC: `bc1qspsnjenfq6wgj9a7pmm2xe3up4622wqxlem0g5`
 
-LTC: `ltc1qhj3ts8ek0lklqfydxu90ku5d5efq5cw5ww7u9g`
+TON: `UQCgt8EfLdT3QOmnC11vsndUBHryi2suTcTOVCQqBgMdmg4l`
 
-XMR: `86QVbA9XLJ9WznTDRgA7dbf8UV9rsR5KB1UxJCPtdwQqd9rv9YZNRkTJvesGzM13khL9Do1BRb5biUTuDZ5YqnuQF8JrJYk`
+LTC: `ltc1qup3v46fm05sxd278r63957wh4qf2esehevpy76`
 
-***
-
-To open Spotify links in sideloaded app, use [OpenSpotifySafariExtension](https://github.com/BillyCurtis/OpenSpotifySafariExtension). Remember to activate it and allow access in Settings > Safari > Extensions.
